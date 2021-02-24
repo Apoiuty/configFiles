@@ -1,0 +1,24 @@
+let mapleader=","
+set ReplaceWithRegister
+set argtextobj
+set commentary
+set easymotion
+set exchange
+set highlightedyank
+set ideajoin
+set multiple-cursors
+set surround
+set textobj-entire
+
+"开启ssh：gs
+nmap gs :action com.jetbrains.plugins.remotesdk.console.RunSshConsoleAction<CR>
+"检查
+nmap [s :action GotoPreviousError<CR>
+nmap ]s :action GotoPreviousError <CR>
+nmap z= :action ShowIntentionActions <CR>
+"加入watch
+nmap gw :action Debugger.AddToWatch <CR>
+"选中所有光标下的单词
+nmap g<A-n> :action SelectAllOccurrences<CR>
+let g:argtextobj_pairs="(:),{:},<:>"
+let g:highlightedyank_highlight_duration = "1000"
